@@ -23,19 +23,20 @@ body {
 
 
 	.scallop {
-	  position:relative;
+		position:relative;
+		// -webkit-clip-path: circle(60% at 50% 45%);
+		// clip-path: circle(60% at 50% 45%);
 	}
 	.scallop::before { 
-	  position: absolute;
-	  bottom: -40px;
-	  left: 0px;
-	  width: 100%;
-	  content: "";
-	  background: 
-	  radial-gradient(circle at 50% 0%, #fff 25%, transparent 26%, transparent 40%);
-	  background-size:50px 100px;
-	  height:50px;
-	  background-repeat: repeat-x;
+		position: absolute;
+		bottom: -80px;
+		left: 0px;
+		width: 100%;
+		content: "";
+		background: radial-gradient(circle at 50% 0%, #fff 25%, transparent 26%, transparent 40%);
+		background-size: 165px 310px;
+		height: 90px;
+		background-repeat: repeat-x;
 	}
 
 section.header {
@@ -92,7 +93,7 @@ section.skills {
 	.skills-container {
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		text-align: center;
 		margin: 30px 0;
 	}
@@ -107,6 +108,7 @@ section.skills {
 	bottom: 12px;
 	}
 	.skills-icon {
+		width: 15%;
 		p {
 			display: block;
 			text-align: center;
