@@ -144,6 +144,9 @@ section.skills {
 }
 
 section.portfolio {
+	.wrapper-btmborder {
+		border-bottom: 1px solid #DEDEDE;
+	}
 	h2:after {
 		content: "";
 		display: block;
@@ -281,6 +284,10 @@ section.contact {
 	margin: 100px 7% 10% 7%;
 	padding: 1% 0;
 	}
+	section.skills h2:after,
+	section.portfolio h2:after {
+		width: 70%;
+	}
 }
 
 /* Portrait tablet and small desktops */
@@ -313,6 +320,10 @@ section.contact {
 			width: 21%;
 			box-shadow: none;
 		}
+	}
+	section.skills h2:after,
+	section.portfolio h2:after {
+		width: 70%;
 	}
 
 }
@@ -359,6 +370,13 @@ section.contact {
 			.skills-icon {
 				width: 25%;
 			}
+	}
+	section.skills h2:after {
+		width: 60%;
+		
+	}
+	section.portfolio h2:after {
+		width: 73%;
 	}
 }
 /* Landscape phones and down */
