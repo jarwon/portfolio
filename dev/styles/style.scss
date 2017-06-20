@@ -28,8 +28,7 @@ body {
 	webkit-clip-path: circle(136% at 50% 100%);
 	clip-path: circle(136% at 50% 100%);
 	background-color: #fff;
-	// -webkit-clip-path: circle(60% at 50% 45%);
-	// clip-path: circle(60% at 50% 45%);
+
 }
 .scallop::before { 
 	position: absolute;
@@ -164,7 +163,9 @@ section.portfolio {
 			max-width: 60%;
 			margin: 0 20px;
 			img {
+				// box-shadow: 6px 20px 0 #1313E5;
 				max-width: 100%;
+				border: 10px solid RGBA(241, 241, 251, 1.00);
 			}
 		}
 		.portfolio-names {
@@ -174,7 +175,7 @@ section.portfolio {
 		.portfolio-links {
 			transform: rotate(90deg);
 			position: relative;
-			left: 53%;
+			left: 60%;
 			a {
 				margin: 0 5px;
 				padding: 2px;
@@ -347,7 +348,7 @@ section.contact {
 				margin: 50px 20px 10px 20px;
 			}
 			.portfolio-links {
-				left: 51%;
+				left: 55%;
 			}
 		}
 	}
@@ -363,7 +364,7 @@ section.contact {
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.wrapper {
-		margin: 40px 20px;
+		margin: 40px 10px;
 	}
 	section.header {
 		.header-clip {
@@ -382,6 +383,9 @@ section.contact {
 		.about-image {
 			display: block;
 			margin: 0 auto;
+			-webkit-clip-path: none;
+			clip-path: none;
+
 		}
 		.wrapper-btmborder {
 			display: block;
@@ -405,11 +409,11 @@ section.contact {
 	}
 	section.portfolio {
 		.portfolio-project {
-			// background-color: green;
 			.portfolio-links {
 				transform: none;
-				left: 0;
-				display: block;
+				position: static;
+				display: flex;
+				justify-content: flex-end;
 			}
 			.portfolio-img {
 				max-width: 100%;

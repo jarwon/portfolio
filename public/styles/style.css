@@ -262,14 +262,15 @@ section.portfolio .portfolio-project {
     max-width: 60%;
     margin: 0 20px; }
     section.portfolio .portfolio-project .portfolio-img img {
-      max-width: 100%; }
+      max-width: 100%;
+      border: 10px solid RGBA(241, 241, 251, 1); }
   section.portfolio .portfolio-project .portfolio-names {
     margin: 0 10px;
     width: 45%; }
   section.portfolio .portfolio-project .portfolio-links {
     transform: rotate(90deg);
     position: relative;
-    left: 53%; }
+    left: 60%; }
     section.portfolio .portfolio-project .portfolio-links a {
       margin: 0 5px;
       padding: 2px; }
@@ -398,7 +399,7 @@ section.contact input[type=submit] {
       width: 100%;
       margin: 50px 20px 10px 20px; }
     section.portfolio .portfolio-project .portfolio-links {
-      left: 51%; }
+      left: 55%; }
   section.skills .skills-container {
     margin: 30px 0 0 0; }
   section.skills .skills-icon {
@@ -407,7 +408,7 @@ section.contact input[type=submit] {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .wrapper {
-    margin: 40px 20px; }
+    margin: 40px 10px; }
   section.header .header-clip {
     display: none; }
   section.header .header-mobile {
@@ -418,7 +419,9 @@ section.contact input[type=submit] {
     display: none; }
   section.about .about-image {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-clip-path: none;
+    clip-path: none; }
   section.about .wrapper-btmborder {
     display: block;
     padding-top: 100px; }
@@ -433,8 +436,9 @@ section.contact input[type=submit] {
       text-align: left; }
   section.portfolio .portfolio-project .portfolio-links {
     transform: none;
-    left: 0;
-    display: block; }
+    position: static;
+    display: flex;
+    justify-content: flex-end; }
   section.portfolio .portfolio-project .portfolio-img {
     max-width: 100%;
     margin: 0; }
