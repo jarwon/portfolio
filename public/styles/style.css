@@ -136,7 +136,7 @@ html {
   font-family: "Inconsolata", monospace; }
 
 body {
-  background-color: #F1F1FB;
+  background-color: #FDF6EF;
   font-size: 20px; }
 
 .wrapper {
@@ -146,7 +146,7 @@ body {
 
 .scallop {
   position: relative;
-  webkit-clip-path: circle(136% at 50% 100%);
+  -webkit-clip-path: circle(136% at 50% 100%);
   clip-path: circle(136% at 50% 100%);
   background-color: #fff; }
 
@@ -184,9 +184,9 @@ h1, h3, p {
   padding: 0; }
 
 h2 {
-  box-shadow: inset 0 20px 0 RGBA(241, 241, 251, 1);
+  box-shadow: inset 0 20px 0 #FDF6EF;
   display: inline;
-  color: #1313E5;
+  color: #EC0C22;
   font-size: 30px; }
 
 h1 {
@@ -196,8 +196,9 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #1313E5;
-  border-bottom: 1px solid #000; }
+  color: #EC0C22;
+  border-bottom: 1px solid #000;
+  transition: 0.5s; }
   a:hover {
     border-bottom: none; }
 
@@ -266,7 +267,7 @@ section.portfolio .portfolio-project {
     margin: 0 20px; }
     section.portfolio .portfolio-project .portfolio-img img {
       max-width: 100%;
-      border: 10px solid RGBA(241, 241, 251, 1); }
+      border: 10px #FDF6EF; }
   section.portfolio .portfolio-project .portfolio-names {
     margin: 0 10px;
     width: 45%; }
@@ -306,7 +307,7 @@ section.contact .contact-socialmedia {
       margin: 0;
       display: block; }
       section.contact .contact-socialmedia ul li .fa {
-        color: #1313E5;
+        color: #EC0C22;
         margin: 10px; }
       section.contact .contact-socialmedia ul li a {
         background-color: transparent;
@@ -318,36 +319,36 @@ section.contact form {
   width: 100%; }
 
 section.contact input[type=text], section.contact input[type=email] {
-  color: #1313E5;
+  color: #EC0C22;
   border: none;
   border-bottom: 1px solid #000;
   width: 37%;
   padding: 5px; }
   section.contact input[type=text]:focus, section.contact input[type=email]:focus {
     outline: none;
-    border-bottom: 1px solid #1313E5; }
+    border-bottom: 1px solid #EC0C22; }
 
 section.contact textarea {
-  color: #1313E5;
+  color: #EC0C22;
   width: 75%;
   border: 1px solid #000;
   margin: 30px 0;
   padding: 5px; }
   section.contact textarea:focus {
     outline: none;
-    border: 1px solid #1313E5; }
+    border: 1px solid #EC0C22; }
 
 section.contact input[type=submit] {
   display: block;
   padding: 10px;
   width: 30%;
   color: #fff;
-  background-color: #1313E5;
+  background-color: #EC0C22;
   border: none;
   margin: 0; }
   section.contact input[type=submit]:focus {
     outline: none;
-    border: 1px solid #1313E5; }
+    border: 1px solid #EC0C22; }
 
 .logo {
   width: 200px;
@@ -430,7 +431,7 @@ section.contact input[type=submit] {
     display: none; }
   section.header .header-mobile {
     display: block;
-    color: #0004A9; }
+    color: #B90713; }
   section.skills h2:after,
   section.portfolio h2:after {
     display: none; }
