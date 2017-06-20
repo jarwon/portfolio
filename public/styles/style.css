@@ -349,6 +349,10 @@ section.contact input[type=submit] {
     outline: none;
     border: 1px solid #1313E5; }
 
+.logo {
+  width: 200px;
+  height: 100px; }
+
 @media (max-width: 1019px) {
   .wrapper {
     background-color: #fff;
