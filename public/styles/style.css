@@ -198,9 +198,9 @@ a {
   text-decoration: none;
   color: #EC0C22;
   border-bottom: 1px solid #000;
-  transition: 0.5s; }
+  transition: 0.7s; }
   a:hover {
-    border-bottom: none; }
+    border-bottom: 1px solid #EC0C22; }
 
 section.about .wrapper-btmborder {
   display: flex;
@@ -213,7 +213,8 @@ section.about .about-image {
   transform: scale(0.7); }
 
 section.about p {
-  margin: 30px 0; }
+  margin: 30px 0;
+  line-height: 1.3; }
 
 section.skills .skills-container {
   display: flex;
@@ -267,7 +268,7 @@ section.portfolio .portfolio-project {
     margin: 0 20px; }
     section.portfolio .portfolio-project .portfolio-img img {
       max-width: 100%;
-      border: 10px #FDF6EF; }
+      border: 10px solid #FDF6EF; }
   section.portfolio .portfolio-project .portfolio-names {
     margin: 0 10px;
     width: 45%; }
@@ -311,7 +312,8 @@ section.contact .contact-socialmedia {
         margin: 10px; }
       section.contact .contact-socialmedia ul li a {
         background-color: transparent;
-        padding: 2px; }
+        padding: 2px;
+        margin-left: 10px; }
       section.contact .contact-socialmedia ul li p {
         display: inline-block; }
 
@@ -352,13 +354,29 @@ section.contact input[type=submit] {
 
 .logo {
   width: 200px;
-  height: 100px; }
+  height: 100px;
+  margin: 0 auto;
+  display: block; }
+
+@media (max-width: 1194px) {
+  section.about .about-image {
+    display: block;
+    margin: 0 auto; }
+  section.about .wrapper-btmborder {
+    display: block;
+    padding: 40px 0; } }
 
 @media (max-width: 1019px) {
   .wrapper {
     background-color: #fff;
     margin: 100px 7% 10% 7%;
     padding: 1% 0; }
+  section.about .about-image {
+    display: block;
+    margin: 0 auto; }
+  section.about .wrapper-btmborder {
+    display: block;
+    padding: 40px 0; }
   section.skills h2:after,
   section.portfolio h2:after {
     width: 70%; } }
@@ -477,5 +495,5 @@ section.contact input[type=submit] {
     section.contact .contact-container .contact-form,
     section.contact .contact-container .contact-socialmedia {
       width: 100%;
-      font-size: 25px;
-      margin: 30px 0; } }
+      font-size: 35px;
+      margin: 30px 10px; } }
