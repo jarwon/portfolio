@@ -209,8 +209,7 @@ section.about .wrapper-btmborder {
 
 section.about .about-image {
   -webkit-clip-path: polygon(0 22%, 89% 9%, 63% 80%, 19% 98%);
-  clip-path: polygon(0 22%, 89% 9%, 63% 80%, 19% 98%);
-  transform: scale(0.7); }
+  clip-path: polygon(0 22%, 89% 9%, 63% 80%, 19% 98%); }
 
 section.about p {
   margin: 30px 0;
